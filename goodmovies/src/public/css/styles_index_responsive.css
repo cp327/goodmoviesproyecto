@@ -1,0 +1,346 @@
+@media(max-width: 1366px) {
+    .img-slo img{
+        width: 250px;
+        margin-right: 50px;
+    }
+
+    .img-slo1 h1{
+        font-size: 80px;
+    }
+
+    .info-good h2{
+        font-size: 15px;
+    }
+
+    .ntb{
+        width: 300px;
+    }
+
+    .sec-poster1 img{
+        height: 300px;
+    }
+
+    .sec-poster2 img{
+        height: 300px;
+    }
+}
+
+
+@media(max-width: 992px) {
+    body{
+        background-color: white;
+    }
+    .cont-txts-prin h1{
+        font-size: 40px;
+        margin-top: 5%;
+    }
+
+    .cont-txts-prin h2{
+        font-size: 18px;
+        margin: 5px;
+    }
+
+
+    .txt-unete h3{
+        font-size: 30px;
+    }
+
+    .txt-mte span{
+        font-size: 15px;
+    }
+
+    .sec-tabla tr{
+        width: 20px;
+    }
+
+    .txt-mejor h3{
+        margin-top: 0;
+        font-size: 30px;
+        margin: 10px;
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    .txt-disfruta span{
+        font-size: 13px;
+        margin: 10px;
+    }
+
+    .sec-poster{
+        margin-bottom: 20%;
+    }
+
+    .img-pain{
+        height: 300px;
+        margin: 10px;
+    }
+
+    .pain-img{
+        width: 50%;
+    }
+    
+    .pain-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .txt-div{
+        width: 50%;
+    }
+
+    .txt-div h2{
+        font-size: 25px;
+    }
+
+    .txt-div li{
+        font-size: 10px;
+        margin-top: 5%;
+    }
+
+    .txt-experiencia h3{
+        font-size: 30px;
+    }
+
+    .txt-dsp span{
+        font-size: 12px;
+    }
+
+    .cont-img-ds{
+        width: 100%;
+        margin: 0;
+    }
+
+    .cont-img-ds img{
+        width: 100%;
+        height: auto;
+    }
+    
+
+    .lt h3{
+        font-size: 12px;
+    }
+
+    .foot{
+        text-align: center;
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    .txt-foot{
+        margin: 0px 10px;
+    }
+
+
+    .foot img{
+        height: 60px;
+        width: auto;
+    }
+
+    .ld{
+        margin-top: 10px;
+    }
+
+    .tabla td{
+        margin: 0;
+    }
+
+    .tabla img{
+        width: 120px;
+        height: auto;
+    }
+
+    .tabla li{
+        font-size: 18px;
+    }
+
+    .tabla button{
+        width: 200px;
+    }
+
+    .txt-foot4{
+        margin-bottom: 30px;
+    }
+}
+
+
+
+@media(max-width: 992px) {
+
+    /* Clase para ocultar el header inicialmente */
+    .header {
+    position: fixed;
+    transform: translateY(0%);
+    }
+
+    /* Oculta las 2 primeras imágenes en sec-poster1 */
+    .sec-poster1 a:nth-child(-n+3) {
+        display: none;
+    }
+    
+    /* Oculta las 2 primeras imágenes en sec-poster2 */
+    .sec-poster2 a:nth-child(-n+3) {
+        display: none;
+    }
+    
+    /* Acomoda los divs en bloque */
+    .sec-poster1, .sec-poster2 {
+        display: block;
+        text-align: center; /* Centra las imágenes */
+    }
+
+    .sec-poster img{
+        margin-top: 20px;
+    }
+
+    .sec-poster1 img{
+        height: 210px;
+    }
+
+    .sec-poster2 img{
+        height: 210px;
+    }
+
+    .txt-mejor{
+        margin-top: 20%;
+    }
+
+    .btn-2{
+        display: none;
+    }
+
+
+    .img-slo img{
+        margin-right: 55px;
+       width: 170px;
+    }
+
+    .img-slo1 h1{
+        margin-top: 2%;
+        font-size: 60px;
+    }
+
+    .info-cont{
+        width: 100%;
+        background-color: rgba(0, 255, 255, 0);
+    }
+
+    .vacio{
+        background-color: rgba(255, 0, 0, 0);
+        width: 10%;
+    }
+
+    .info-good{
+        background-color: rgba(255, 255, 0, 0);
+        margin: 0;
+        width: 90%;
+    }
+
+    .info-good h2{
+        font-size: 15px;
+        margin-bottom: 4%;
+    }
+
+    .ntb{
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .btn-1{
+        width: 120px;
+    }
+
+    .btn-4{
+        width: 170px;
+    }
+
+
+
+    /* .slider{
+        background-image: url(../imgs/it-wall.jpg);
+        background-size: cover;
+        animation: animate 20s infinite;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    
+    .slider::before{
+        content: '';
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(rgba(255, 255, 255, 0), black);
+    }
+    
+    @keyframes animate {
+        10% {
+            background-image: url(../imgs/imgs-principal/the-flash-multiverse-pp.jpg);
+            background-size: cover;
+            
+        }
+    
+        20% {
+            background-image: url(../imgs/imgs-principal/marvels-spider-man-remastered-moon-p7.jpg);
+            background-size: cover;
+            
+        }
+    
+        30% {
+            background-image: url(../imgs/imgs-principal/wonder-woman-justice-league-poster-hl.jpg);
+            background-size: cover;
+            
+        }
+    
+        40% {
+            background-image: url(../imgs/imgs-principal/five-nights-at-freddys-ko.jpg);
+            background-size: cover;
+            
+        }
+    
+        50% {
+            background-image: url(../imgs/imgs-principal/fast-x-chinese-poster-ik.jpg);
+            background-size: cover;
+            
+        }
+    
+        
+        60% {
+            background-image: url(../imgs/imgs-principal/harrison-ford-indiana-jones-and-the-dial-of-destiny-4k-wl.jpg);
+            background-size: cover;
+            
+        }
+    
+        70% {
+            background-image: url(../imgs/imgs-principal/the-chronicles-of-john-wick-8s.jpg);
+            background-size: cover;
+            
+        }
+        
+        80% {
+            background-image: url(../imgs/imgs-principal/cillian-murphy-j-robert-oppenheimer-desert-i9.jpg);
+            background-size: cover;
+            
+        }
+    
+        90% {
+            background-image: url(../imgs/imgs-principal/rocket-raccoon-guardians-of-the-galaxy-vol-3-poster-aq.jpg);
+            background-size: cover;
+            
+        }
+    
+        100% {
+            background-image: url(../imgs/imgs-principal/the-nun-2-movie-ka.jpg);
+            background-size: cover;
+            
+        }
+    
+    }
+} */
+
+}

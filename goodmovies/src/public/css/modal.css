@@ -1,0 +1,267 @@
+.modal, .modall {
+    background-color: rgba(155, 155, 211, 0.527);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* display: flex; */
+    opacity: 0;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    max-width: 90%;
+    max-height: 80%;
+    width: 400px;
+    height: 1000px;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    max-height: 80%;
+    overflow-y: auto; 
+    position: relative; /* Establece una posición relativa para los elementos dentro de la ventana modal */
+  }
+
+/* Reglas para el cuerpo (body) cuando la modal está abierta */
+.modal-show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 0.6s;
+    --transform: translateY(0);
+    --transition: transform 0.8s 0.8s;
+  }
+
+  .close_modal{
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(84, 94, 90);
+    z-index: 2000; /* Asegura que el botón esté sobre otros elementos */
+}
+
+.modal_container {
+
+    width: 400px;
+    height: 1000px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: aqua;
+    border-radius: 6px;
+    padding: 3rem 2.5rem;
+    transform: var(--transform);
+    transition: var(--transition);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Añade un máximo de altura para la modal-container para evitar que se desborde */
+.modal_container {
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 600px;
+}
+
+.user-info{
+    height: 40%;
+    
+}
+
+.modal_container h2{
+    font-size: 1.2rem;
+    
+    color: rgb(56, 55, 55);
+}
+
+.modal_container p{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: rgb(62, 102, 96);
+    margin: auto;
+}
+
+.modal_container img{
+    width: 80px;
+    max-width: 100px;
+    height: 80px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+.round-image{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+.img-modal{
+    width: 50%;
+    height: 70%;
+}
+
+.nyc{
+    width: 50%;
+    height: 30%;
+}
+
+.titulo-modal {
+    margin-top: 20px;
+
+}
+
+
+.user-info p {
+    font-size: 0.8rem;
+    color: rgb(62, 102, 96);
+}
+
+
+
+.page-info {
+    color: rgb(62, 102, 96);
+    font-size: 14px; 
+    
+}
+
+.pagination{
+    margin-top: 3px;
+    width: 100%;
+    height: 40%;
+}
+
+.pagination h3{
+    color: rgb(56, 55, 55);
+    font-size: 1.4rem;
+    text-align: center;
+    
+}
+
+.table-modal tr{
+    background-color: rgb(22, 236, 236);
+}
+
+
+.table-modal thead th{
+    color: rgb(56, 55, 55);
+}
+
+.vida-plan{
+    width: 100%;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 2px;
+    z-index: 1002;
+    align-items: center;
+    display: flex;
+}
+
+.vida-plan h4{
+    color: rgb(56, 55, 55);
+    font-size: 0.9rem;
+    margin-left: 26%;
+    
+}
+
+.table-modal tbody{
+    height: 300px;
+}
+
+.table-modal thead{
+    top: 4px;
+}
+
+.table-modal thead tr{
+    margin-top: 20px;
+}
+
+.table-modal tbody .no-registro{
+    color: rgb(62, 102, 96);
+    text-align: center;
+    
+}
+
+
+
+.modal-show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform:translateY(0);
+    --transition:transform .8s .8s;
+    width: 600px;
+}
+
+.actions span{
+    cursor: pointer;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999; 
+    display: none; /* Inicialmente oculto */
+  }
+
+  .payment-history{
+    height: 500px;
+  }
+  
+  /* Clase para mostrar el fondo modal cuando el modal esté abierto */
+  .modal-open .modal-backdrop {
+    display: block;
+  }
+
+  .alert-message {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: fadeIn 0.5s;
+    z-index: 1000;
+}
+
+.shake-animation {
+    animation: shake 0.5s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(0); }
+    20% { transform: translate(1px); }
+    40% { transform: translate(-1px); }
+    60% { transform: translate(1px); }
+    80% { transform: translate(-1px); }
+    100% { transform: translate(0); }
+  }
+  
+  .table-modal {
+    z-index: 1000; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.table-modal th, .table-modal td {
+    z-index: 1001; 
+}
+
+
+  

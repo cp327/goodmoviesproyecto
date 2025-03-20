@@ -1,0 +1,32 @@
+
+.table{
+border: 2px solid grey;
+border-collapse: collapse;
+text-align: center;
+width: 80%;
+}
+
+
+.table td{
+border: 2px solid grey;
+}
+
+.table td, tr{
+    padding: 15px; 
+}
+
+.search-container h3{
+    font-size: 25px;
+}
+.search-container{
+    
+    padding: 30px;
+    margin-left:160px;
+    display: flex;
+}
+
+.buscador{ 
+    margin-left: 20px;
+    
+    width: 260px;  
+}
